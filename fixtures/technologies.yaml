@@ -1,0 +1,64 @@
+- model: my_profile.technology
+  pk: 1
+  fields:
+    name: PHP
+- model: my_profile.technology
+  pk: 2
+  fields:
+    name: Python
+- model: my_profile.technology
+  pk: 3
+  fields:
+    name: C99 - C20
+- model: my_profile.technology
+  pk: 4
+  fields:
+    name: C++
+- model: my_profile.technology
+  pk: 5
+  fields:
+    name: Git
+- model: my_profile.technology
+  pk: 6
+  fields:
+    name: Golang
+- model: my_profile.technology
+  pk: 7
+  fields:
+    name: Java
+- model: my_profile.technology
+  pk: 8
+  fields:
+    name: JavaScript
+- model: my_profile.technology
+  pk: 9
+  fields:
+    name: NodeJS
+- model: my_profile.technology
+  pk: 10
+  fields:
+    name: ReactJS
+- model: my_profile.technology
+  pk: 11
+  fields:
+    name: ExpressJS
+- model: my_profile.technology
+  pk: 12
+  fields:
+    name: SQL
+- model: my_profile.technology
+  pk: 13
+  fields:
+    name: PostgreSQL
+- model: my_profile.technology
+  pk: 14
+  fields:
+    name: MongoDB
+- model: my_profile.technology
+  pk: 15
+  fields:
+    name: MySQL
+- model: my_profile.technology
+  pk: 16
+  fields:
+    name: OracleDB

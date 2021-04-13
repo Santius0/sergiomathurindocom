@@ -694,10 +694,6 @@ section.bl-expand .bl-icon-close {
   background: transparent;
 }
 
-.bl-main>section.topleft.woman {
-  background-image: url('../images/woman.jpg');
-}
-
 .bl-main>section.topleft:before {
   position: absolute;
   bottom: -36px;

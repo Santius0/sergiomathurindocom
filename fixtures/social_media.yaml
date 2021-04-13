@@ -1,0 +1,24 @@
+- model: my_profile.socialmedia
+  pk: 1
+  fields:
+    name: facebook
+    website: https://www.facebook.com
+    html_icon_class: fa fa-facebook
+- model: my_profile.socialmedia
+  pk: 2
+  fields:
+    name: instagram
+    website: https://www.instagram.com/
+    html_icon_class: fa fa-instagram
+- model: my_profile.socialmedia
+  pk: 3
+  fields:
+    name: twitter
+    website: https://www.twitter.com
+    html_icon_class: fa fa-twitter
+- model: my_profile.socialmedia
+  pk: 4
+  fields:
+    name: linkedin
+    website: https://www.linkedin.com/
+    html_icon_class: fa fa-linkedin

@@ -1,0 +1,16 @@
+- model: my_profile.job
+  pk: 1
+  fields:
+    name: Software Engineer
+- model: my_profile.job
+  pk: 2
+  fields:
+    name: Curious Mind
+- model: my_profile.job
+  pk: 3
+  fields:
+    name: Data Scientist
+- model: my_profile.job
+  pk: 4
+  fields:
+    name: Daydreamer

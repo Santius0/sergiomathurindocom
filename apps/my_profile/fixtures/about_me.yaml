@@ -1,0 +1,127 @@
+- model: my_profile.socialmedialink
+  pk: 1
+  fields:
+    profile: 0
+    social_media: 1
+    link: https://www.facebook.com/sergiomathurin95
+- model: my_profile.socialmedialink
+  pk: 2
+  fields:
+    profile: 0
+    social_media: 2
+    link: https://www.instagram.com/_smathurin/
+- model: my_profile.socialmedialink
+  pk: 3
+  fields:
+    profile: 0
+    social_media: 4
+    link: https://www.linkedin.com/in/sergio-mathurin/
+- model: my_profile.language
+  pk: 1
+  fields:
+    name: English
+    level: Native
+- model: my_profile.language
+  pk: 2
+  fields:
+    name: German
+    level: Basic
+- model: my_profile.language
+  pk: 3
+  fields:
+    name: Spanish
+    level: Basic
+- model: my_profile.experience
+  pk: 1
+  fields:
+    profile: 0
+    position: Software Developer
+    company: University of the West Indies, St. Augustine
+    start_date: 2019-04-01
+    end_date: 2021-04-01
+    desc: Software Developer on funded research project from the University of the
+      West Indies in the field of fingerprint analysis, classification and matching.
+- model: my_profile.experience
+  pk: 2
+  fields:
+    profile: 0
+    position: Vice President
+    company: ClickToStart Foundation
+    start_date: 2021-01-01
+    end_date: null
+    desc: Vice President and founding board member of the ClickToStart Foundation.
+      A non-profit aimed at using technology and technology education to better our
+      community.
+- model: my_profile.experience
+  pk: 3
+  fields:
+    profile: 0
+    position: Software Developer Intern - Enterprise Applications Team
+    company: University of the West Indies, Campus Information Technology Services
+    start_date: 2018-06-01
+    end_date: 2018-09-01
+    desc: Developed an API creation tool to securely serve student and staff data
+      via  OAuth2 authorization.
+- model: my_profile.education
+  pk: 1
+  fields:
+    profile: 0
+    qualification: Bachelor of Science in Computer Science
+    school: Bachelor of Science in Computer Science
+    start_date: 2015-08-20
+    end_date: 2019-01-30
+    desc: Graduated With Honours
+- model: my_profile.skill
+  pk: 1
+  fields:
+    profile: 0
+    technology: 2
+    rating: 5.0
+- model: my_profile.skill
+  pk: 2
+  fields:
+    profile: 0
+    technology: 4
+    rating: 4.0
+- model: my_profile.skill
+  pk: 3
+  fields:
+    profile: 0
+    technology: 3
+    rating: 4.0
+- model: my_profile.skill
+  pk: 4
+  fields:
+    profile: 0
+    technology: 5
+    rating: 5.0
+- model: my_profile.skill
+  pk: 5
+  fields:
+    profile: 0
+    technology: 7
+    rating: 3.5
+- model: my_profile.skill
+  pk: 6
+  fields:
+    profile: 0
+    technology: 10
+    rating: 3.5
+- model: my_profile.skill
+  pk: 7
+  fields:
+    profile: 0
+    technology: 8
+    rating: 3.5
+- model: my_profile.skill
+  pk: 8
+  fields:
+    profile: 0
+    technology: 9
+    rating: 2.5
+- model: my_profile.skill
+  pk: 9
+  fields:
+    profile: 0
+    technology: 13
+    rating: 4.0

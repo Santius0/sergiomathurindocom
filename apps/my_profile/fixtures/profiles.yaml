@@ -1,0 +1,25 @@
+- model: my_profile.profile
+  pk: 0
+  fields:
+    first_name: Sergio
+    last_name: Mathurin
+    picture: profile/15776906_10207964253210843_6009570145526208349_o.jpg
+    intro_line: Hi There! I'm
+    resume: Resume_12_04_2021.pdf
+    dob: 1995-06-25
+    nationality: Trinidad and Tobago/St. Lucia
+    freelance: true
+    phone_number: +1 (868) 281 - 3370
+    address: Trinidad and Tobago
+    email: santius1995@gmail.com
+    blurb: Learn, Apply, Create.
+    jobs:
+    - 1
+    - 2
+    - 3
+    - 4
+    projects:
+    - 1
+    languages:
+    - 1
+    - 2
