@@ -1,2 +1,2 @@
 # sergiomathurindocom
-Simple personal website. https://sergiomathurin.com
+Simple personal website: https://sergiomathurin.com.
