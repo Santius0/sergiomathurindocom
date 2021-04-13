@@ -1,0 +1,67 @@
+{% load static %}
+
+<div class="bl-panel-items" id="bl-panel-work-items">
+    {% for project_panel in project_panels %}
+        <div data-panel="{{ project_panel.panel }}">
+        <div class="row">
+            <!-- Project Main Content Starts -->
+            <div class="col s12 l6 xl6 section-padding section-padding-right-none">
+                {% if project_panel.project.image %}
+                    <img class="responsive-img" src="{{ project_panel.project.image.url }}" alt="{{ project_panel.project.name }}" width="535" height="400"/>
+                {% else %}
+                    <img class="responsive-img" src="http://via.placeholder.com/535x400" alt="{{ project_panel.project.name }}" width="535" height="400"/>
+                {% endif %}
+            </div>
+            <!-- Project Main Content Ends -->
+            <!-- Project Details Starts -->
+            <div class="col s12 l6 xl6 section-padding">
+                <h3 class="font-weight-700 uppercase">{{ project_panel.project.name }}</h3>
+                <ul class="project-details second-font">
+                    {% if project_panel.project.client %}
+                        <li><i class="fa fa-user"></i><span class="font-weight-700"> Client </span>: <span class="font-weight-400 uppercase">{{ project_panel.project.client }}</span></li>
+                    {% endif %}
+                    {% if project_panel.project.start_date %}
+                        <li><i class="fa fa-calendar-o"></i><span class="font-weight-700"> Start Date </span>: <span class="font-weight-400 uppercase">{{ project_panel.project.start_date }}</span></li>
+                        {% if project_panel.project.end_date %}
+                            <li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase">{{ project_panel.project.end_date }}</span></li>
+                        {% else %}
+                            <li><i class="fa fa-calendar-check-o"></i><span class="font-weight-700"> End Date </span>: <span class="font-weight-400 uppercase"> - </span></li>
+                        {% endif %}
+                    {% endif %}
+                    {% if project_panel.tech_len > 0 %}
+                        <li><i class="fa fa-cogs"></i> <span class="font-weight-700">Technologies Used</span> :
+                            <span class="font-weight-400 uppercase">
+                                {% for technology in project_panel.tech %}
+                                    {{ technology.name }},
+                                {% endfor %}
+                            </span>
+                        </li>
+                    {% endif %}
+                    {% if project_panel.project.desc %}
+                        <li><p>{{ project_panel.project.desc }}</p></li>
+                    {% endif %}
+                </ul>
+                {% if project_panel.project.link %}
+                    <hr>
+                    <a href="{{ project_panel.project.link }}" target="_blank" class="waves-effect waves-light btn font-weight-700">Preview <i class="fa fa-external-link"></i></a>
+                {% endif %}
+            </div>
+            <!-- Project Details Ends -->
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- Portfolio Navigation Starts -->
+    <nav>
+        <!-- Previous Work Icon Starts -->
+        <span class="control-button bl-previous-work"><i class="fa fa-angle-left"></i></span>
+        <!-- Previous Work Icon Ends -->
+        <!-- Close Work Icon Starts -->
+        <img alt="close" src="{% static 'images/close-button.png' %}" class="control-button bl-icon-close" />
+        <!-- Close Work Icon Ends -->
+        <!-- Next Work Icon Starts -->
+        <span class="control-button bl-next-work"><i class="fa fa-angle-right"></i></span>
+        <!-- Previous Work Icon Ends -->
+    </nav>
+    <!-- Portfolio Navigation Ends -->
+</div>
