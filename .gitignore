@@ -3,3 +3,4 @@
 /moscow/
 /staticfiles/
 *.pyc
+*/__pycache__/*
