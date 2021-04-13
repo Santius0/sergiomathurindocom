@@ -1,0 +1,15 @@
+- model: my_profile.language
+  pk: 1
+  fields:
+    name: English
+    level: Native
+- model: my_profile.language
+  pk: 2
+  fields:
+    name: German
+    level: Basic
+- model: my_profile.language
+  pk: 3
+  fields:
+    name: Spanish
+    level: Basic

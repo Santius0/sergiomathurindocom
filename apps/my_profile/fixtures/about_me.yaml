@@ -16,21 +16,6 @@
     profile: 0
     social_media: 4
     link: https://www.linkedin.com/in/sergio-mathurin/
-- model: my_profile.language
-  pk: 1
-  fields:
-    name: English
-    level: Native
-- model: my_profile.language
-  pk: 2
-  fields:
-    name: German
-    level: Basic
-- model: my_profile.language
-  pk: 3
-  fields:
-    name: Spanish
-    level: Basic
 - model: my_profile.experience
   pk: 1
   fields:
