@@ -1,5 +1,5 @@
 - model: my_profile.profile
-  pk: 0
+  pk: 1
   fields:
     first_name: Sergio
     last_name: Mathurin

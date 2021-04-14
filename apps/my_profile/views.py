@@ -39,7 +39,7 @@ class SkillLayout:
 
 
 def my_profile(request):
-    profile = get_object_or_404(Profile, pk=0)
+    profile = get_object_or_404(Profile, pk=1)
     project_panels = []
     for idx, project in enumerate(profile.projects.order_by('start_date')):
         project_panels.append(ProjectPanel(project, idx+1, project.technologies.all()))
