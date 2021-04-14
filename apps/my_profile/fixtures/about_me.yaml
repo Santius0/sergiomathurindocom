@@ -1,25 +1,25 @@
 - model: my_profile.socialmedialink
   pk: 1
   fields:
-    profile: 0
+    profile: 1
     social_media: 1
     link: https://www.facebook.com/sergiomathurin95
 - model: my_profile.socialmedialink
   pk: 2
   fields:
-    profile: 0
+    profile: 1
     social_media: 2
     link: https://www.instagram.com/_smathurin/
 - model: my_profile.socialmedialink
   pk: 3
   fields:
-    profile: 0
+    profile: 1
     social_media: 4
     link: https://www.linkedin.com/in/sergio-mathurin/
 - model: my_profile.experience
   pk: 1
   fields:
-    profile: 0
+    profile: 1
     position: Software Developer
     company: University of the West Indies, St. Augustine
     start_date: 2019-04-01
@@ -29,7 +29,7 @@
 - model: my_profile.experience
   pk: 2
   fields:
-    profile: 0
+    profile: 1
     position: Vice President
     company: ClickToStart Foundation
     start_date: 2021-01-01
@@ -40,7 +40,7 @@
 - model: my_profile.experience
   pk: 3
   fields:
-    profile: 0
+    profile: 1
     position: Software Developer Intern - Enterprise Applications Team
     company: University of the West Indies, Campus Information Technology Services
     start_date: 2018-06-01
@@ -50,7 +50,7 @@
 - model: my_profile.education
   pk: 1
   fields:
-    profile: 0
+    profile: 1
     qualification: Bachelor of Science in Computer Science
     school: Bachelor of Science in Computer Science
     start_date: 2015-08-20
@@ -59,54 +59,54 @@
 - model: my_profile.skill
   pk: 1
   fields:
-    profile: 0
+    profile: 1
     technology: 2
     rating: 5.0
 - model: my_profile.skill
   pk: 2
   fields:
-    profile: 0
+    profile: 1
     technology: 4
     rating: 4.0
 - model: my_profile.skill
   pk: 3
   fields:
-    profile: 0
+    profile: 1
     technology: 3
     rating: 4.0
 - model: my_profile.skill
   pk: 4
   fields:
-    profile: 0
+    profile: 1
     technology: 5
     rating: 5.0
 - model: my_profile.skill
   pk: 5
   fields:
-    profile: 0
+    profile: 1
     technology: 7
     rating: 3.5
 - model: my_profile.skill
   pk: 6
   fields:
-    profile: 0
+    profile: 1
     technology: 10
     rating: 3.5
 - model: my_profile.skill
   pk: 7
   fields:
-    profile: 0
+    profile: 1
     technology: 8
     rating: 3.5
 - model: my_profile.skill
   pk: 8
   fields:
-    profile: 0
+    profile: 1
     technology: 9
     rating: 2.5
 - model: my_profile.skill
   pk: 9
   fields:
-    profile: 0
+    profile: 1
     technology: 13
     rating: 4.0
