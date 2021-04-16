@@ -5,13 +5,7 @@
     client: null
     desc: "This is a test. \r\nLorem ipsum dolor sit amet, consectetur adipiscing
       elit. Vestibulum molestie dolor sodales pretium blandit. Quisque risus magna,
-      sodales at leo dictum, iaculis ultrices erat. Duis non justo in metus ultricies
-      fringilla at a nibh. Curabitur at malesuada ante. Proin eget orci ac nibh ornare
-      vehicula. Integer at diam turpis. Aliquam tempus convallis eros nec pretium.
-      Cras velit odio, interdum condimentum neque et, vestibulum eleifend tellus.
-      Phasellus pretium a massa et consectetur. Aenean in arcu ante. Sed egestas erat
-      odio, quis sagittis eros blandit ut. Nullam pretium sapien a nulla porttitor,
-      eget ultricies lectus ornare."
+      sodales at leo dictum, iaculis ultrices erat."
     start_date: 2021-04-13
     end_date: 2021-04-13
     link: https://www.google.com/
