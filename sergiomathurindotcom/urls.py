@@ -19,10 +19,13 @@ from django.conf.urls import handler404, handler500
 
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.my_profile.urls')),
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('favicon_io/favicon.ico'))),
 ]
 
 handler404 = 'apps.my_profile.views.not_found'

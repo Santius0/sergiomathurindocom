@@ -131,9 +131,9 @@ STATIC_URL = '/static/'
 
 # Because the base static folder is empty it will cause an error when trying to pushing to heroku when collectstatic
 # is called , uncomment the following lines if anything is added to the base static folder
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
