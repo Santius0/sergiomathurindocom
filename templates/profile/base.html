@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+    <title>{% block title %}Sergio Mathurin{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    {% block header-css %}{% endblock header-css %}
+    {% block header-js %}
+        <script src="{% static 'js/modernizr.custom.js' %}"></script>
+    {% endblock header-js %}
+    {% block body %}
+        <h1>sergiomathurin.com</h1>
+    {% endblock body %}
+</html>

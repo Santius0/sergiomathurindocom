@@ -76,6 +76,7 @@ def contact(request):
 
 def not_found(request, *args, **kwargs):
     context = {
+        'error_title': 'Not Found',
         'error_code': 404,
         'error_message': 'Page Or Resource Not Found.',
     }
@@ -84,6 +85,7 @@ def not_found(request, *args, **kwargs):
 
 def internal_server_error(request, *args, **kwargs):
     context = {
+        'error_title': 'Internal Server Error',
         'error_code': 500,
         'error_message': 'Internal Server Error. Try Again Later.',
     }

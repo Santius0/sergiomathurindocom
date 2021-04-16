@@ -1,89 +1,82 @@
+{% extends 'profile/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <title>Sergio Mathurin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-
-    <!-- Template CSS Files -->
+{% block title %}Sergio Mathurin{% endblock title %}
+{% block header-css %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.animatedheadline.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/materialize.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/skins/yellow.css' %}" />
-
-    <!-- Template JS Files -->
+{% endblock header-css %}
+{% block header-js %}
     <script src="{% static 'js/modernizr.custom.js' %}"></script>
+{% endblock header-js %}
 
-</head>
-
-<body class="dark">
-    <!-- Preloader Start -->
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-    <!-- Preloader Ends -->
-    <!-- Wrapper Starts -->
-    <div class="wrapper">
-        {% if main_picture %}
-            <div class="main-picture hide-on-med-and-down" style="background-image: url('{{ main_picture.url }}');"></div>
-        {% else %}
-            <div class="main-picture hide-on-med-and-down" style="background-image: url('http://via.placeholder.com/594x1032');"></div>
-        {% endif %}
-        <div id="bl-main" class="bl-main">
-            <!-- Top Left Section Starts -->
-            <section class="topleft">
-                <div class="bl-box row valign-wrapper">
-                    <div class="row valign-wrapper mb-0">
-                        <div class="title-heading">
-                            <div class="selector uppercase" id="selector">
-                                <h3 class="ah-headline p-none m-none">
-                                    <span class="font-weight-400">{{ intro_line }}</span>
-									<span class="my-name">{{ name }}</span>
-                                    <span class="ah-words-wrapper">
-                                        <b class="is-visible">{{ first_job }}</b>
-                                        {% for job in jobs %}
-                                            <b>{{ job }}</b>
-                                        {% endfor %}
-									</span>
-                                </h3>
+{% block body %}
+    <body class="dark">
+        <!-- Preloader Start -->
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <!-- Preloader Ends -->
+        <!-- Wrapper Starts -->
+        <div class="wrapper">
+            {% if main_picture %}
+                <div class="main-picture hide-on-med-and-down" style="background-image: url('{{ main_picture.url }}');"></div>
+            {% else %}
+                <div class="main-picture hide-on-med-and-down" style="background-image: url('http://via.placeholder.com/594x1032');"></div>
+            {% endif %}
+            <div id="bl-main" class="bl-main">
+                <!-- Top Left Section Starts -->
+                <section class="topleft">
+                    <div class="bl-box row valign-wrapper">
+                        <div class="row valign-wrapper mb-0">
+                            <div class="title-heading">
+                                <div class="selector uppercase" id="selector">
+                                    <h3 class="ah-headline p-none m-none">
+                                        <span class="font-weight-400">{{ intro_line }}</span>
+                                        <span class="my-name">{{ name }}</span>
+                                        <span class="ah-words-wrapper">
+                                            <b class="is-visible">{{ first_job }}</b>
+                                            {% for job in jobs %}
+                                                <b>{{ job }}</b>
+                                            {% endfor %}
+                                        </span>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- Top Left Section Ends -->
-            <!-- About Section Starts -->
-            {% include "profile/about.html" %}
-            <!-- About Ends -->
-            <!-- Portfolio Starts -->
-            {% include "profile/portfolio.html" %}
-            <!-- Portfolio Section Ends -->
-            <!-- Contact Section Starts -->
-            {% include "profile/contact.html" %}
-            <!-- Contact Section Ends -->
-            <!-- Portfolio Panel Items Starts -->
-            {% include "profile/portfolio_panel_items.html" %}
-            <!-- Portfolio Panel Items Ends -->
+                </section>
+                <!-- Top Left Section Ends -->
+                <!-- About Section Starts -->
+                {% include "profile/about.html" %}
+                <!-- About Ends -->
+                <!-- Portfolio Starts -->
+                {% include "profile/portfolio.html" %}
+                <!-- Portfolio Section Ends -->
+                <!-- Contact Section Starts -->
+                {% include "profile/contact.html" %}
+                <!-- Contact Section Ends -->
+                <!-- Portfolio Panel Items Starts -->
+                {% include "profile/portfolio_panel_items.html" %}
+                <!-- Portfolio Panel Items Ends -->
+            </div>
         </div>
-    </div>
-    <!-- Wrapper Ends -->
+        <!-- Wrapper Ends -->
 
-    <!-- Template JS Files -->
-    <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
-    <script src="{% static 'js/jquery.animatedheadline.js' %}"></script>
-    <script src="{% static 'js/boxlayout.js' %}"></script>
-    <script src="{% static 'js/materialize.min.js' %}"></script>
-    <script src="{% static 'js/jquery.hoverdir.js' %}"></script>
-    <script src="{% static 'js/custom.js' %}"></script>
+        <!-- Template JS Files -->
+        <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
+        <script src="{% static 'js/jquery.animatedheadline.js' %}"></script>
+        <script src="{% static 'js/boxlayout.js' %}"></script>
+        <script src="{% static 'js/materialize.min.js' %}"></script>
+        <script src="{% static 'js/jquery.hoverdir.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
 
-</body>
+    </body>
 
-</html>
+{% endblock body %}
