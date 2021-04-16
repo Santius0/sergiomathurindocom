@@ -72,3 +72,11 @@ def contact(request):
             )
             contact_data.save()
         return HttpResponse("success")
+
+
+# def not_found(request, exception):
+#     return render(request, 'profile/404.html', {})
+
+
+# def error(request, exception):
+#     return render(request, '', {})
