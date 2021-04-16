@@ -3,7 +3,7 @@
   fields:
     first_name: Sergio
     last_name: Mathurin
-    picture:  profile/profile_main.jpg
+    picture: profile/profile_main.jpg
     intro_line: Hi There! I'm
     resume: Resume_12_04_2021.pdf
     dob: 1995-06-25
