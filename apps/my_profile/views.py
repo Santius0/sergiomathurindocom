@@ -74,9 +74,17 @@ def contact(request):
         return HttpResponse("success")
 
 
-# def not_found(request, exception):
-#     return render(request, 'profile/404.html', {})
+def not_found(request, *args, **kwargs):
+    context = {
+        'error_code': 404,
+        'error_message': 'Page Or Resource Not Found.',
+    }
+    return render(request, 'profile/error.html', context)
 
 
-# def error(request, exception):
-#     return render(request, '', {})
+def internal_server_error(request, *args, **kwargs):
+    context = {
+        'error_code': 500,
+        'error_message': 'Internal Server Error. Try Again Later.',
+    }
+    return render(request, 'profile/error.html', context)
